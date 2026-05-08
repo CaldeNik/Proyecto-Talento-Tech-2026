@@ -1,3 +1,8 @@
+package com.store.main;
+
+import com.store.models.Producto;
+import com.store.models.ProductoImportado;
+
 import java.util.ArrayList;
 
 public class Main {

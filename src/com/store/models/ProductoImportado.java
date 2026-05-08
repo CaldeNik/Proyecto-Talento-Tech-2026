@@ -1,3 +1,4 @@
+package com.store.models;
 
 public class ProductoImportado extends Producto {
     private double impuesto;

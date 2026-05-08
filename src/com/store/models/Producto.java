@@ -1,3 +1,5 @@
+package com.store.models;
+
 public class Producto {
 
     private String nombre;
@@ -19,6 +21,6 @@ public class Producto {
 
     @Override
     public String toString() {
-        return "Producto: " + nombre + " | Precio base: $" + precio;
+        return "com.store.models.Producto: " + nombre + " | Precio base: $" + precio;
     }
 }
