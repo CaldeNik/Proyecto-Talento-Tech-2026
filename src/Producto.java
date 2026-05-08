@@ -1,11 +1,24 @@
 public class Producto {
 
-    public String nombre;
-    public double precio;
+    private String nombre;
+    private double precio;
+
+    public Producto(String nombre, double precio) {
+        this.nombre = nombre;
+        this.precio = precio;
+    }
 
 
-    public Producto(String nombreRecibido, double precioRecibido) {
-        this.nombre = nombreRecibido;
-        this.precio = precioRecibido;
+    public String getNombre() {
+        return nombre;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    @Override
+    public String toString() {
+        return "Producto: " + nombre + " | Precio base: $" + precio;
     }
 }

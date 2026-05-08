@@ -5,18 +5,18 @@ public class Main {
 
         ArrayList<Producto> inventario = new ArrayList<>();
 
+        inventario.add(new Producto("Remera Nacional", 2000.0));
 
-        inventario.add(new Producto("Remera Importada", 25.0));
-        inventario.add(new Producto("Pantalon Deportivo", 40.0));
-        inventario.add(new Producto("Zapatillas", 80.0));
+        inventario.add(new ProductoImportado("Campera Importada", 5000.0, 1500.0));
 
-
-        System.out.println("Cantidad de productos en inventario: " + inventario.size());
-
-        System.out.println("--- Detalle del Inventario ---");
+        System.out.println("--- Reporte de Inventario ---");
 
         for (Producto p : inventario) {
-            System.out.println("Producto: " + p.nombre + " | Precio: $" + p.precio);
+
+            System.out.println("Articulo: " + p.getNombre());
+            System.out.println("Precio Final: $" + p.getPrecio());
+            System.out.println("Detalles: " + p.toString());
+            System.out.println("---------------------------");
         }
     }
 }
